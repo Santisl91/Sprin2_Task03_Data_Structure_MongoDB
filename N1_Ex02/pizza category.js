@@ -1,0 +1,2 @@
+
+db.createCollection( 'pizza category', {validator: {$jsonSchema: {bsonType: 'object',title:'pizza category',required: [         'category name'],properties: {category name: {bsonType: 'string'}}         }      }});  

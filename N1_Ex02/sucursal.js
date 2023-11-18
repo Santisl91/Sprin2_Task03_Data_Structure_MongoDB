@@ -1,0 +1,3 @@
+
+db.createCollection( 'sucursal', {validator: {$jsonSchema: {bsonType: 'object',title:'sucursal',required: [         'address',          'cp',          'location',          'employee'],properties: {address: {bsonType: 'string'},cp: {bsonType: 'int'},location: {bsonType: 'object',
+title:'object',required: [         'province'],properties: {province: {bsonType: 'string'}}},employee: {bsonType: 'objectId'}}         }      }});  
